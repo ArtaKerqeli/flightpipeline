@@ -4,11 +4,14 @@
   create or replace view `flight_db`.`raw`.`bronze_flights`
   
   as (
-    SELECT
+    -- models/bronze/bronze_flights.sql
+select
     flight_id,
-    origin,
-    destination AS dest,  -- or the correct column name
     airline,
+    origin,
+    destination,
+    dep_delay,
+    arr_delay,
     arr_time
-FROM `flight_db`.`raw`.`flights`
+from `flight_db`.`raw`.`flights`
   )

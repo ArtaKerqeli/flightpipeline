@@ -1,3 +1,4 @@
+-- models/bronze/bronze_airports.sql
 select
     airport_id,
     iata_code,

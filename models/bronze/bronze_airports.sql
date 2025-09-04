@@ -1,8 +1,9 @@
+-- models/bronze/bronze_airports.sql
 select
     airport_id,
     iata_code,
     city,
     state,
     country
-from {{ source('raw_flights', 'airports') }}
+from {{ source('raw', 'airports') }}
 

@@ -4,7 +4,8 @@
   create or replace view `flight_db`.`raw`.`bronze_airports`
   
   as (
-    select
+    -- models/bronze/bronze_airports.sql
+select
     airport_id,
     iata_code,
     city,

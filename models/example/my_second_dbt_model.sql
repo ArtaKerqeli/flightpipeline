@@ -1,6 +1,10 @@
-
--- Use the `ref` function to select from other models
-
-select *
+select
+    flight_id,
+    airline,
+    origin,
+    destination,
+    dep_delay,
+    arr_delay,
+    arr_time
 from {{ ref('my_first_dbt_model') }}
-where id = 1
+

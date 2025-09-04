@@ -1,4 +1,10 @@
--- models/gold/gold_flight_metrics.sql
+
+  
+  
+  create or replace view `flight_db`.`raw`.`gold_flight_metrics`
+  
+  as (
+    -- models/gold/gold_flight_metrics.sql
 
 select
   f.airline,
@@ -15,4 +21,5 @@ from raw.silver_flights f
 left join raw.silver_airlines al on f.airline = al.airline
 left join raw.silver_airports o on f.origin = o.iata_code
 left join raw.silver_airports d on f.destination = d.iata_code
-group by 1,2,3,4,5,6;
+group by 1,2,3,4,5,6
+  )
