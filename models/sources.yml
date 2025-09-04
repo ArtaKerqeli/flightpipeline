@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    database: flight_db
+    schema: raw
+    tables:
+      - name: airlines
+      - name: flights
+      - name: airports
+
