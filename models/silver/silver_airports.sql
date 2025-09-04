@@ -1,8 +1,3 @@
-select
-    airport_id,
-    iata_code,
-    city,
-    state,
-    country
+select *
 from {{ ref('bronze_airports') }}
 

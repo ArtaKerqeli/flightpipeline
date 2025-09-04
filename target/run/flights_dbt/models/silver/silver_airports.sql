@@ -4,11 +4,6 @@
   create or replace view `flight_db`.`raw`.`silver_airports`
   
   as (
-    select
-    airport_id,
-    iata_code,
-    city,
-    state,
-    country
+    select *
 from `flight_db`.`raw`.`bronze_airports`
   )

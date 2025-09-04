@@ -1,7 +1,2 @@
-select
-    airport_id,
-    iata_code,
-    city,
-    state,
-    country
+select *
 from `flight_db`.`raw`.`bronze_airports`

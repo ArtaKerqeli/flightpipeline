@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw_flights
+    database: workspace    # your Databricks catalog
+    schema: raw            # actual schema where tables exist
+    tables:
+      - name: flights
+      - name: airports
+      - name: airlines
+
