@@ -1,0 +1,16 @@
+name: 'flights_dbt'
+version: '1.0'
+config-version: 2
+
+profile: 'flights_dbt'
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+models:
+  flights_dbt:
+    raw:
+      materialized: view
+
